@@ -78,14 +78,6 @@
         hour: "17"
         job: ~/bin/upload_timings 
 
-#    - name: Remove ~/.ansible-navigator.yml
-#      when: > 
-        #'do374' in course_info['content'] | b64decode | join or
-        #'rh294' in course_info['content'] | b64decode | join
-        #      ansible.builtin.file:
-        #        path: ~/.ansible-navigator.yml
-        #        state: absent
-
     - name: Ensure resolution is obtained
       register: current_resolution
       changed_when: false
